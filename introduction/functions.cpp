@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cstdlib>
 using namespace std;
 
 void sum(){
@@ -37,12 +37,13 @@ void div(){
 }
 int main(int argc, char const *argv[]){
     int option;
-    while(option != 5){
+    while(option != 6){
         cout << "What do you want to work? \n";
         cout << "1) Add up two numbers!\n";
         cout << "2) Substract two numbers!\n";
         cout << "3) Multiply two numbers!\n";
         cout << "4) Divide two numbers!\n";
+        cout << "5) Get a random number!\n";
         cin >> option;
         switch (option) {
             case 1:
@@ -58,7 +59,10 @@ int main(int argc, char const *argv[]){
                 div();
                 break;
             case 5:
-                cout << "Goodbye!";
+                cout << rand() % 10 << "\n";
+                break;
+            case 6:
+                cout << "Goodbye!\n";
                 break;
         }
     }
