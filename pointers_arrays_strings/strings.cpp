@@ -24,12 +24,15 @@ int main(int argc, char const *argv[]) {
     cout << strcmp(word, another_word) << "\n";
     
     // string concat
-    char concat [18];
-    cout << strcat(strcat(concat, word), another_word) << "\n";
+    char concat [18]; // create new string for concatenating other words
+    cout << strcat(strcat(concat, word), another_word) << "\n"; // concat the two words together
 
     // string copy
     strcpy(word, another_word);
     cout << word << "\n";
-    
+
+    // string length
+    cout << strlen(concat);
+
     return 0;
 }

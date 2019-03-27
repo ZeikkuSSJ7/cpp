@@ -1,0 +1,2 @@
+PLAYER   Zeikku    GAME TIME  23:37
+POKEDEX  21        BADGES       8
